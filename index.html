@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Dev | Remote Website Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-flex">
+            <div style="display:flex; align-items:center; gap:10px; font-family: 'Montserrat', sans-serif;">
+            <div style="font-size:30px; color:#2c9d3f;">&#x3C;/&#x3E;</div> <!-- code brackets icon -->
+            <div style="font-size:24px; font-weight:bold; color:#203a43;">Web Dev</div>
+        </div>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>We Build Modern, <br><span class="accent-text">Responsive Websites</span></h1>
+            <p>High-performance digital solutions crafted 100% remotely. Specialized in Javascript, HTML, CSS, and modern Web Stacks.</p>
+            <div class="hero-btns">
+                <a href="#pricing" class="btn btn-primary">View Packages</a>
+                <a href="Web Dev Pricing Plans.pdf" download class="btn btn-outline">Download Packages <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container grid-2">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600" alt="Professional Development">
+            </div>
+            <div class="about-text">
+                <h2>Excellence in Remote Development</h2>
+                <p>Web Dev is a specialized, online-only development agency. We leverage global communication tools to deliver premium software and websites without the overhead of physical offices.</p>
+                <div class="social-links">
+                    <a href="mailto:we.developers@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+27716757750" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="https://zoom.us/j/your-meeting-id" target="_blank" title="Zoom">
+                    <img src="zoom-logo.jpg" alt="Zoom" style="width:15px; height:15px;"></a>
+                    <a href="https://github.com/wedeverlopers-cloud" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Key Services</h2>
+            <div class="grid-3">
+                <div class="card">
+                   <i class="fas fa-laptop-code fa-3x"></i>
+                    <h3>Custom Website Development</h3>
+                    <p>Building responsive, modern websites tailored to client needs.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-search fa-3x"></i>
+    <h3>SEO & Google Business Setup</h3>
+    <p>Improve search visibility and enhance your online presence.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tools fa-3x"></i>
+                    <h3>Monthly Website Maintenance</h3>
+                    <p>Content updates, security monitoring, and performance optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Service Packages</h2>
+            <div class="grid-3">
+                <!-- 1 -->
+                <div class="price-card">
+                    <h3>Starter Website</h3>
+                    <div class="price">R2,000</div>
+                    <p>Timeframe: 1-2 Weeks</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Starter Website">Choose Plan</button>
+                </div>
+                <!-- 2 -->
+                <div class="price-card featured">
+                    <h3>Standard Website</h3>
+                    <div class="price">R3,000</div>
+                    <p>Timeframe: 2-3 Weeks</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Standard Website">Choose Plan</button>
+                </div>
+                <!-- 3 -->
+                <div class="price-card">
+                    <h3>Professional Website</h3>
+                    <div class="price">R4,500</div>
+                    <p>Timeframe: 2-3 Weeks</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Professional Website">Choose Plan</button>
+                </div>
+                <!-- 4 -->
+                <div class="price-card">
+                    <h3>Website + Google Presence</h3>
+                    <div class="price">R5,500</div>
+                    <p>Timeframe: 3-4 Weeks</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Website and Google Presence">Choose Plan</button>
+                </div>
+                <!-- 5 -->
+                <div class="price-card">
+                    <h3>Advanced Web Solutions</h3>
+                    <div class="price">R7,000</div>
+                    <p>Timeframe: 4-6 Weeks</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Advanced Web Solutions">Choose Plan</button>
+                </div>
+                <!-- 6 -->
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <div class="price">R9,000</div>
+                    <p>Timeframe: 4-6 Weeks</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Premium">Choose Plan</button>
+                </div>
+                <!-- 7 -->
+                <div class="price-card">
+                    <h3>Maintenance Cost</h3>
+                    <div class="price">10% - 20%<small>/mo</small></div>
+                    <p>Timeframe: Ongoing</p>
+                    <button class="btn btn-primary plan-btn" data-plan="Monthly Maintenance">Choose Plan</button>
+                </div>
+            </div>
+
+    <div class="table-container">
+        <h3 style="text-align:center; margin-bottom:20px;">Comparison Overview</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Starter Website</th>
+                        <th>Standard Website</th>
+                        <th>Professional Website</th>
+                        <th>Website + Google Presence</th>
+                        <th>Advanced Web Solutions</th>
+                        <th>Premium Package</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Responsive / Mobile Optimized</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Design & UI/UX</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>SEO & Google Business Setup</td>
+                        <td>❌</td>
+                        <td>Basic</td>
+                        <td>Advanced</td>
+                        <td>Full</td>
+                        <td>Full</td>
+                        <td>Full + Analytics</td>
+                    </tr>
+                    <tr>
+                        <td>Products / Services Page</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Integration / E-Commerce</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Domain Name</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Monthly Maintenance (Optional)</td>
+                        <td>10–15%</td>
+                        <td>10–15%</td>
+                        <td>10–15%</td>
+                        <td>15–20%</td>
+                        <td>15–20%</td>
+                        <td>15–20%</td>
+                    </tr>
+                    <tr>
+                        <td>Estimated Timeframe</td>
+                        <td>1–2 weeks</td>
+                        <td>2–3 weeks</td>
+                        <td>2–3 weeks</td>
+                        <td>3–4 weeks</td>
+                        <td>4–6 weeks</td>
+                        <td>4–6 weeks</td>
+                    </tr>
+                    <tr>
+                        <td>Price (ZAR)</td>
+                        <td>2,000</td>
+                        <td>3,000</td>
+                        <td>4,500</td>
+                        <td>5,500</td>
+                        <td>7,000</td>
+                        <td>9,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Previous Projects</h2>
+            <div class="grid-portfolio">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=400" alt="Python">
+                    <div class="overlay"><span>Python Automation</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=400" alt="C++">
+                    <div class="overlay"><span>C++ Game Engine</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=400" alt="SQL">
+                    <div class="overlay"><span>Inventory SQL DB</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400" alt="Web">
+                    <div class="overlay"><span>SaaS Landing Page</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Websites Section -->
+    <section id="clients" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Client & Company Websites</h2>
+            <p style="text-align:center; max-width:700px; margin:0 auto 40px;">
+                Below are websites we have designed and developed for real clients and businesses.
+                Each project reflects our commitment to clean design, performance, and usability.
+            </p>
+
+            <div style="display:flex; justify-content:center;">
+                <a 
+                    href="https://wedeverlopers-cloud.github.io/KC-Bible-Shop/" 
+                    target="_blank" 
+                    class="btn btn-primary"
+                >
+                    KC Bible Shop Website
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Web Dev</h2>
+            <div class="contact-grid">
+                <a href="mailto:we.developers@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>hello@webdev.com</p>
+                </a>
+                <a href="tel:+27716757750" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h4>Phone</h4>
+                    <p>+27 71 675 7750</p>
+                </a>
+                <a href="https://github.com/wedeverlopers-cloud" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <h4>GitHub</h4>
+                    <p>@wedeverlopers-cloud</p>
+                </a>
+                <a href="https://zoom.us/j/your-meeting-id" target="_blank" class="contact-item">
+                    <img src="zoom-logo.jpg"" alt="Zoom" style="width:40px; height:40px;">
+                    <h4>Meet Me on Zoom</h4>
+                    <p>Schedule a meeting</p>
+                </a>
+
+
+            </div>
+            
+           <!-- Updated WhatsApp Button Section -->
+<div class="online-meeting-card">
+    <p><i class="fas fa-video"></i> We host all consultations via <strong>Zoom</strong> or <strong>Google Meet</strong>.</p>
+    <div class="form-container">
+        <textarea id="contact-message" rows="4" placeholder="Select a plan above or type your inquiry here..."></textarea>
+        <!-- Fixed WhatsApp Button Wrapper -->
+        <div class="wa-container">
+            <a href="https://wa.me/27637220108" target="_blank" class="whatsapp-btn">
+                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Updated Professional Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div style="display:flex; align-items:center; gap:10px; font-family: 'Montserrat', sans-serif;">
+                <div style="font-size:30px; color:#2c9d3f;">&#x3C;/&#x3E;</div> <!-- code brackets icon -->
+                <div style="font-size:24px; font-weight:bold; color:#203a43;">Devoria</div>
+            </div>
+                <p>Modern Solutions for a Digital World.</p>
+            </div>
+            <ul class="footer-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="https://github.com/wedeverlopers-cloud"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#in"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Devoria. 100% Remote Operations | South Africa</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
